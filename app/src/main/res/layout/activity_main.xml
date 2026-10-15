@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B0000"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#8B0000"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HornCharger"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Plays your sound when the charger is plugged in."
+            android:textSize="14sp"
+            android:textColor="#FFCDD2" />
+
+        <Button
+            android:id="@+id/importBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:text="Import audio file" />
+
+        <TextView
+            android:id="@+id/fileNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="No sound selected"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/previewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg"
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:text="Preview" />
+
+        <TextView
+            android:id="@+id/volumeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Volume: 100%"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/volumeSeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100" />
+
+        <CheckBox
+            android:id="@+id/chargerChk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Play on charger plug-in"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/headphoneChk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Play on headphone connect (USB-C / 3.5mm)"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="13sp"
+            android:textColor="#FFCDD2" />
+
+    </LinearLayout>
+</ScrollView>
